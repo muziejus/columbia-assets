@@ -183,6 +183,7 @@ body {
 .reveal code {
   font-family: "Source Code Pro", monospace;
   background: #63859D;
+  font-size: 80%;
   padding: .5rem;
   /* padding-left: .5rem; */
   /* padding-right: .5rem; */
