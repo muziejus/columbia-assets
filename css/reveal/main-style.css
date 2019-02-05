@@ -387,7 +387,7 @@ body {
   color: #ffffff;
 }
 
-.hljs-name { 
+.hljs-name, .hljs-subst { 
   color: #DBD56E;
 }
 
