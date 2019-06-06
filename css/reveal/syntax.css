@@ -6,9 +6,7 @@ based on dark.css by Ivan Sagalaev
 /* 
  * darkblue: #63859D;
  * columbiablue: #B9D9EB
- * straw: #DBD56E;
- * purplish gray: #cfccd6;
- * mint: #BCEBCB;
+ * straw: #DDD392;
  */
 
 /* Solarized:
@@ -37,7 +35,7 @@ based on dark.css by Ivan Sagalaev
 .hljs-request,
 .hljs-status,
 .clojure .hljs-attribute {
-  color: #B9D9EB;
+  color: #DDD392;
 }
 
 .django .hljs-template_tag,
@@ -90,7 +88,7 @@ based on dark.css by Ivan Sagalaev
 .ruby .hljs-symbol,
 .ruby .hljs-symbol .hljs-string,
 .ruby .hljs-string {
-  color: #dca3a3;
+  color: #AD8BC6;
 }
 
 .diff .hljs-deletion,
@@ -108,7 +106,7 @@ based on dark.css by Ivan Sagalaev
 .apache .hljs-cbracket,
 .tex .hljs-formula,
 .coffeescript .hljs-attribute {
-  color: #cc9393;
+  color: #AD8BC6;
 }
 
 .hljs-shebang,
@@ -117,7 +115,7 @@ based on dark.css by Ivan Sagalaev
 .hljs-annotation,
 .hljs-pi,
 .hljs-doctype {
-  color: #7f9f7f;
+  color: #78A1BF;
 }
 
 .coffeescript .javascript,
@@ -128,4 +126,8 @@ based on dark.css by Ivan Sagalaev
 .xml .css,
 .xml .hljs-cdata {
   opacity: 0.5;
+}
+
+.hljs-attr, .hljs-params {
+  color: #A7E5B7;
 }
