@@ -1,0 +1,24 @@
+{
+  "name": "columbia-assets",
+  "version": "0.0.1",
+  "description": "CSS for getting that Columbia University Libraries look",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muziejus/columbia-assets.git"
+  },
+  "author": "Moacir P. de Sá Pereira <github@moacir.moacir.com> (http://moacir.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/muziejus/columbia-assets/issues"
+  },
+  "homepage": "https://github.com/muziejus/columbia-assets#readme",
+  "devDependencies": {
+    "tailwindcss": "^1.1.3",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
