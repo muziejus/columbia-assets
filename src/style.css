@@ -1,0 +1,10 @@
+@import "something.css";
+
+.dummy {
+  color: var(--color-black);
+}
+
+.blue {
+  color: #0000ff;
+}
+
