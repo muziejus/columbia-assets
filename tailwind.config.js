@@ -15,6 +15,42 @@ module.exports = {
       black: '#000',
       white: '#fff',
 
+      columbiaBlue: {
+        100: "#ffffff",
+        200: "#ebf4f9",
+        300: "#d7e9f4",
+        400: "#c3deee",
+        500: "#b9d9eb",
+        600: "#9cc9e3",
+        700: "#74b3d8",
+        800: "#4c9dcd",
+        900: "#3284b3"
+      },
+
+      darkBlue: {
+        100: "#6696ff",
+        200: "#3374ff",
+        300: "#0051ff",
+        400: "#0041cc",
+        500: "#0033a0",
+        600: "#003099",
+        700: "#002880",
+        800: "#002066",
+        900: "#00184d"
+      },
+
+      washedBlue: {
+        100: "#eff3f5",
+        200: "#c0ced8",
+        300: "#b1c2ce",
+        400: "#829db0",
+        500: "#63859d",
+        600: "#4f6a7d",
+        700: "#3b4f5e",
+        800: "#27353f",
+        900: "#141a1f"
+      },
+
       gray: {
         100: '#f7fafc',
         200: '#edf2f7',
@@ -235,6 +271,8 @@ module.exports = {
         '"Noto Color Emoji"',
       ],
       serif: [
+        "EB Garamond",
+        "Garamond",
         'Georgia',
         'Cambria',
         '"Times New Roman"',
@@ -249,6 +287,13 @@ module.exports = {
         '"Courier New"',
         'monospace',
       ],
+      title: [
+        "Trajan Pro",
+        "Trajan",
+        "Cinzel",
+        "Garamond",
+        "serif"
+      ]
     },
     fontSize: {
       xs: '0.75rem',
