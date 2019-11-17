@@ -1,0 +1,39 @@
+/*********************************************
+ * BLOCKQUOTES AND CREDITS
+ *********************************************/
+
+/*********************************************
+ * BIBLIOGRAPHY
+ *********************************************/
+
+.reveal .bibliography li {
+	@apply .text-xs;
+}
+
+@media screen and (min-width: 768px) {
+	.reveal .bibliography li {
+		@apply .text-xs;
+	}
+}
+
+/*********************************************
+ * TWO-COLUMN LAYOUT
+ *********************************************/
+
+.col-2 {
+  @apply .flex .flex-col .w-full .my-3 .justify-around .items-center;
+}
+
+@media screen and (min-width: 768px) {
+  .col-2 {
+    @apply .flex-row
+  }
+}
+
+.col {
+	@apply .p-3;
+}
+
+.col > ul {
+	width: 100%;
+}

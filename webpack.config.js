@@ -12,13 +12,15 @@ module.exports = {
   module: {
     rules: 
       [
-        loaders.JS,
         loaders.CSS
     ],
   },
-  entry: "./src/index.js",
+  entry: {
+    style: "./src/style.css",
+    columbia: "./src/columbia.css",
+    columbiaReveal: "./src/columbia-reveal.css"
+  },
   output: {
-    filename: "bundle.js",
     path: path.resolve(__dirname, "dist")
   }
 };

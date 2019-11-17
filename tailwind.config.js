@@ -355,6 +355,7 @@ module.exports = {
       ...negative(theme('spacing')),
     }),
     maxHeight: {
+			lessh2: "calc(100% - 1.875rem)",
       full: '100%',
       screen: '100vh',
     },
@@ -370,6 +371,9 @@ module.exports = {
       '5xl': '64rem',
       '6xl': '72rem',
       full: '100%',
+			"50": "50%",
+      "70": '70%',
+      "80": '80%',
     },
     minHeight: {
       '0': '0',
@@ -379,6 +383,7 @@ module.exports = {
     minWidth: {
       '0': '0',
       full: '100%',
+      "50": "50%",
     },
     objectPosition: {
       bottom: 'bottom',

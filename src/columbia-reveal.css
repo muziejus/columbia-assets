@@ -1,0 +1,285 @@
+/**
+ * Custom Columbia University Libraries theme for Reveal.js presentations
+ * © 2019, Moacir P. de Sá Pereira
+ */
+
+/* Import Columbia colors, fonts, and Tailwind defaults. */
+@import "./columbia.css";
+
+@import "./reveal-components.css";
+
+/* Now Tailwind up the simple Reveal theme. */
+section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
+  color: #fff; }
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+html {
+  font-size: 5vmin;
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 4vmin;
+  }
+}
+
+footer, header {
+  height: 10vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -100;
+}
+
+header {
+  top: 0;
+  left: 0;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+}
+
+::selection {
+  color: #fff;
+  background: #b9d9eb;
+  text-shadow: none; }
+
+.reveal .slides section,
+.reveal .slides section > section {
+  line-height: 1.3;
+  font-weight: inherit; }
+
+/*********************************************
+ * HEADERS
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 20px 0;
+  color: #000;
+  font-family: "News Cycle", Impact, sans-serif;
+  font-weight: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-transform: none;
+  text-shadow: none;
+  word-wrap: break-word; }
+ *********************************************/
+
+.reveal h1 {
+  @apply .font-title .text-columbiaBlue-500 .text-5xl
+}
+
+.reveal h2 {
+  @apply .text-3xl
+}
+
+.reveal h3 {
+  @apply .text-2xl .text-columbiaBlue-500
+}
+
+/*********************************************
+ * OTHER
+ *********************************************/
+
+/* Ensure that the slide doesn't run into the footer */
+.reveal .slides section {
+	@apply .max-h-full .overflow-y-auto .overflow-x-hidden;
+}
+
+/* Ensure certain elements are never larger than the slide itself */
+/** The net result here is that things get stretched or fit badly.
+.reveal img,
+.reveal video,
+.reveal iframe {
+  max-width: 95%;
+  max-height: 95%; }
+**/
+
+.reveal ol,
+.reveal dl,
+.reveal ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0 0 0 1em; }
+
+.reveal ol {
+  list-style-type: decimal; }
+
+.reveal ul {
+  list-style-type: disc; }
+
+.reveal ul ul {
+  list-style-type: square; }
+
+.reveal ul ul ul {
+  list-style-type: circle; }
+
+.reveal ul ul,
+.reveal ul ol,
+.reveal ol ol,
+.reveal ol ul {
+  display: block;
+  margin-left: 40px; }
+
+.reveal dt {
+  font-weight: bold; }
+
+.reveal dd {
+  margin-left: 40px; }
+
+.reveal blockquote {
+  background: rgba(0, 32, 102, 0.4);
+  @apply .block .mx-auto .relative .max-w-80 .p-3 .pl-5 .italic .text-left .border-columbiaBlue-500 .border-0 .border-l-4 .shadow-xl
+}
+
+.reveal blockquote p:first-child,
+.reveal blockquote p:last-child {
+  display: inline-block; }
+
+.reveal q {
+  font-style: italic; }
+
+.reveal pre {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 20px auto;
+  text-align: left;
+  font-size: 0.55em;
+  font-family: monospace;
+  line-height: 1.2em;
+  word-wrap: break-word;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15); }
+
+.reveal code {
+  font-family: monospace;
+  text-transform: none; }
+
+.reveal pre code {
+  display: block;
+  padding: 5px;
+  overflow: auto;
+  max-height: 400px;
+  word-wrap: normal; }
+
+.reveal table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.reveal table th {
+  font-weight: bold; }
+
+.reveal table th,
+.reveal table td {
+  text-align: left;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  border-bottom: 1px solid; }
+
+.reveal table th[align="center"],
+.reveal table td[align="center"] {
+  text-align: center; }
+
+.reveal table th[align="right"],
+.reveal table td[align="right"] {
+  text-align: right; }
+
+.reveal table tbody tr:last-child th,
+.reveal table tbody tr:last-child td {
+  border-bottom: none; }
+
+.reveal sup {
+  vertical-align: super;
+  font-size: smaller; }
+
+.reveal sub {
+  vertical-align: sub;
+  font-size: smaller; }
+
+.reveal small {
+  display: inline-block;
+  font-size: 0.6em;
+  line-height: 1.2em;
+  vertical-align: top; }
+
+.reveal small * {
+  vertical-align: top; }
+
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal a {
+  text-decoration: none;
+  -webkit-transition: color .15s ease;
+  -moz-transition: color .15s ease;
+  transition: color .15s ease; 
+  @apply .text-columbiaBlue-500;
+}
+
+.reveal a:hover {
+  text-shadow: none;
+  border: none; 
+  @apply .text-white;
+}
+
+.reveal .roll span:after {
+  color: #fff;
+  background: #00003f; }
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+.reveal section img {
+  background: rgba(255, 255, 255, 0.12);
+  @apply .border-4 .border-columbiaBlue-500 .shadow-xl;
+}
+
+.reveal section img.plain {
+  background: none;
+  @apply .border-0 .shadow-none;
+}
+
+.reveal a img {
+  -webkit-transition: all .15s linear;
+  -moz-transition: all .15s linear;
+  transition: all .15s linear; }
+
+.reveal a:hover img {
+  background: rgba(255, 255, 255, 0.2);
+  @apply .border-4 .border-columbiaBlue-200 .shadow-xl;
+}
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls {
+	@apply .text-columbiaBlue-500
+ }
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.reveal .progress span {
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+	@apply .text-columbiaBlue-500
+}
+
+/*********************************************
+ * PRINT BACKGROUND
+ *********************************************/
+@media print {
+  .backgrounds {
+    background-color: #fff; } }
+
