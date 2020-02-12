@@ -237,7 +237,7 @@ footer {
  *********************************************/
 .reveal section img {
   background: rgba(255, 255, 255, 0.12);
-  @apply .border-4 .border-columbiaBlue-500 .shadow-xl;
+  @apply .border-4 .border-columbiaBlue-500 .shadow-xl .m-auto;
 }
 
 .reveal section img.plain {
