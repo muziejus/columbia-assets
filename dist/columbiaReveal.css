@@ -77533,4 +77533,16 @@ footer {
   }
 }
 
+/******
+ * Moacir stuff
+ * ********/
+
+.reveal .roman {
+  font-style: normal;
+}
+
+.reveal .credit {
+  text-align: right;
+  font-size: 0.6em;
+}
 
