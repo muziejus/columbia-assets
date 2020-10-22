@@ -41,7 +41,29 @@ const CSS = {
   ]
 };  
 
+const SASS = {
+  test: /\.s[ac]ss$/i,
+  use: [
+    {
+      loader: MiniCssExtractPlugin.loader,
+      options: {
+        hmr: process.env.NODE_ENV === 'development',
+      }
+    },
+    // Translates CSS into CommonJS
+    'css-loader',
+    // Compiles Sass to CSS
+    {
+      loader: "sass-loader",
+      options: {
+        implementation: require("sass"),
+      },
+    },
+  ],
+}
+
 module.exports = {
   JS,
-  CSS
+  CSS,
+  SASS
 };
