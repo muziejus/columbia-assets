@@ -1,1 +1,1 @@
-import "./style.css";
+import "./sass/columbia-reveal.scss";

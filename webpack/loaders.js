@@ -44,12 +44,14 @@ const CSS = {
 const SASS = {
   test: /\.s[ac]ss$/i,
   use: [
-    {
-      loader: MiniCssExtractPlugin.loader,
+    { 
+      loader: "file-loader",
       options: {
-        hmr: process.env.NODE_ENV === 'development',
-      }
+        name: "[name].css",
+      },
     },
+    'file-loader',
+    'extract-loader',
     // Translates CSS into CommonJS
     'css-loader',
     // Compiles Sass to CSS
