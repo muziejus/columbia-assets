@@ -1,54 +1,74 @@
+/**
+ * Columbia theme for reveal.js.
+ * Author: Moacir P. de Sá Pereira
+ * Based on Solarized Dark theme for reveal.js by Achim Staebler
+ */
+
+
 // Default mixins and settings -----------------
-// @import "~reveal.js/css/theme/template/mixins";
-// @import "~reveal.js/css/theme/template/settings";
+@import "~reveal.js/css/theme/template/mixins.scss";
+@import "~reveal.js/css/theme/template/settings.scss";
 // ---------------------------------------------
 
+
+
 // Include theme-specific fonts
-// @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
 
+$mainFont: "EB Garamond", serif;
+$headingFont: "Cinzel", serif;
 
-/**
- * Solarized colors by Ethan Schoonover
- */
-html * {
-	color-profile: sRGB;
-	rendering-intent: auto;
-}
+// Colors
 
-// Solarized colors
-$base03:    #002b36;
-$base02:    #073642;
-$base01:    #586e75;
-$base00:    #657b83;
-$base0:     #839496;
-$base1:     #93a1a1;
-$base2:     #eee8d5;
-$base3:     #fdf6e3;
-$yellow:    #b58900;
-$orange:    #cb4b16;
-$red:       #dc322f;
-$magenta:   #d33682;
-$violet:    #6c71c4;
-$blue:      #268bd2;
-$cyan:      #2aa198;
-$green:     #859900;
+$washedBlue: #63859d;
+$columbiaBlue: #b9d9eb;
+$lightColumbiaBlue: #ebf4f9;
+$darkBlue: #003099;
+
 
 // Override theme settings (see ../template/settings.scss)
-$mainColor: $base00;
-$headingColor: $base01;
+$mainColor: $lightColumbiaBlue;
+$headingColor: $columbiaBlue;
 $headingTextShadow: none;
-$backgroundColor: $base3;
-$linkColor: $blue;
-$linkColorHover: lighten( $linkColor, 20% );
-$selectionBackgroundColor: $magenta;
+$headingTextTransform: none;
+$backgroundColor: $washedBlue;
+$linkColor: $columbiaBlue;
+$linkColorHover: lighten( $linkColor, 10% );
+$selectionBackgroundColor: $darkBlue;
 
-// Background generator
-// @mixin bodyBackground() {
-// 	@include radial-gradient( rgba($base3,1), rgba(lighten($base3, 20%),1) );
-// }
+.header-footer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -100;
+  height: 100vh;
+  width: 100vw;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
+  header {
+    display: flex;
 
+    .twitter-slug {
+      text-align: right;
+      width: 100%;
+      padding: 0.5rem;
+      color: $columbiaBlue;
+    }
+  }
+
+  footer {
+    display: flex;
+    align-items: flex-end;
+
+    img {
+      width: 50%;
+    }
+  }
+}
 // Theme template ------------------------------
-// @import "~reveal.js/css/theme/template/theme";
+@import "~reveal.js/css/theme/template/theme.scss";
 // ---------------------------------------------

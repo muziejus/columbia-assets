@@ -8,9 +8,9 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin(),
   ],
-  resolve: {
-    extensions: ['.js', '.jsx', '.scss'],
-  },
+  // resolve: {
+  //   extensions: ['.js', '.jsx', '.scss'],
+  // },
   entry: {
     style: "./src/style.css",
     columbia: "./src/columbia.css",
@@ -27,22 +27,3 @@ module.exports = {
     ],
   },
 };
-
-/*
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
-const loaders = require("./webpack/loaders");
-const plugins = require("./webpack/plugins");
-
-const isDevelopment = process.env.NODE_ENV === 'development'
-
-module.exports = {
-  target: "web",
-  plugins: [
-    plugins.MiniCssExtractPlugin,
-  ],
-  resolve: {
-    extensions: ['.js', '.jsx', '.scss'],
-  },
-};
-*/

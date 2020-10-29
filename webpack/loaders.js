@@ -50,7 +50,6 @@ const SASS = {
         name: "[name].css",
       },
     },
-    'file-loader',
     'extract-loader',
     // Translates CSS into CommonJS
     'css-loader',
